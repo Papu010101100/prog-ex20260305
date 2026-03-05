@@ -15,3 +15,16 @@ public class Alumno {
         this.edad = edad;
     }
 }
+// Metodos Getter
+    public int getId(){
+          return getid;
+}
+    public string getNombre(){
+        return getNombre;
+}
+    public string getTituloFP() {
+        return getTituloFP;
+}
+    public int edad(){
+    return getEdad;
+}
