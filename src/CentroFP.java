@@ -1,6 +1,5 @@
 // Creacion de aaray y gestion de conjunto de alumnos
-public class CentroFP {
-
+public class    CentroFP {
     private Alumno[] alumnos;
     private final int MAX_ALUMNOS;
 }
@@ -13,6 +12,7 @@ public CentroFP (int maximo_alumnos){
 public Alumno buscarAlumno (int idAlumno){
     boolean seguirBuscando = true;
     Alumno AlumnoEncontrado = null;
+
 // Bucle buscar alumno
     for (int i = 0; i < MAX_ALUMNOS && seguirBuscando; i++) {
         if( alumnos[i] != null && alumnos[i].getId() == idAlumno ){
@@ -36,5 +36,10 @@ seguirBuscando = false;}
 
         }
         return posicion;
+}
+// Metodo registrar Alumno si
+public boolean registrarAlumno(){
+    boolean alumnoRegistrado = false;
+    int posicionLibre;
 }
 
