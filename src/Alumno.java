@@ -28,3 +28,17 @@ public class Alumno {
     public int edad(){
     return getEdad;
 }
+
+// Metodo toString
+@Override
+public String toString() {
+    StringBuilder sb = new StringBuilder("Alumno{");
+
+    sb.append(String.format("\n id: %d;", id));
+    sb.append(String.format(" nombre: %s;", nombre));
+    sb.append(String.format(" tituloFP: %s;", tituloFP));
+    sb.append(String.format(" edad: %d;", edad));
+    sb.append("}");
+
+    return sb.toString();
+}
