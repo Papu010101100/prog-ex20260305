@@ -1,4 +1,3 @@
-public class Alumno {
 // Declarar atributos
     public class Alumnos {
         private int id;
@@ -14,7 +13,7 @@ public class Alumno {
         this.tituloFP = tituloFP;
         this.edad = edad;
     }
-}
+
 // Metodos Getter
     public int getId(){
           return getid;
@@ -33,7 +32,7 @@ public class Alumno {
 @Override
 public String toString() {
     StringBuilder sb = new StringBuilder("Alumno{");
-
+    // Apendizamos con respectivo dato
     sb.append(String.format("\n id: %d;", id));
     sb.append(String.format(" nombre: %s;", nombre));
     sb.append(String.format(" tituloFP: %s;", tituloFP));
@@ -42,3 +41,4 @@ public String toString() {
 
     return sb.toString();
 }
+
