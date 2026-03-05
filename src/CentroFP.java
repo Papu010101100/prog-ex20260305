@@ -23,3 +23,18 @@ public Alumno buscarAlumno (int idAlumno){
 
     return alumnoEncontrado;
 }
+
+// Metodo busca del primer hueco vacio y de no conseguirlo devuelve -1
+private int buscarPrimerHuecoVacio(){
+int posicion = -1;
+boolean seguirBuscando = true;
+
+        for (int i = 0; i < MAX_ALUMNOS; i++) {
+        if (alumnos[i] == null){
+posicion = i;
+seguirBuscando = false;}
+
+        }
+        return posicion;
+}
+
